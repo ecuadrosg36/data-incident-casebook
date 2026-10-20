@@ -1,0 +1,9 @@
+[project]
+name = "data-incident-casebook"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = ["dbt-duckdb>=1.9,<2", "pytest>=8,<9"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

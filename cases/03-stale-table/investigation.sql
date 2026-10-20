@@ -1,0 +1,1 @@
+select table_name, min(write_date) first_write, max(write_date) last_write, sum(rows_written) rows_written, sum(error_rows)::double/sum(rows_written) error_rate from write_history group by table_name order by table_name;

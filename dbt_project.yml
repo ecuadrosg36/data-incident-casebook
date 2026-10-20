@@ -1,0 +1,10 @@
+name: incident_casebook
+version: '1.0.0'
+config-version: 2
+profile: incident_casebook
+model-paths: [models]
+seed-paths: [seeds]
+test-paths: [dbt_tests]
+models:
+  incident_casebook:
+    +materialized: table

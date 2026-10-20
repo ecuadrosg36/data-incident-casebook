@@ -1,0 +1,5 @@
+table_name,write_date,rows_written,error_rows
+legacy,2024-01-01,1000,800
+current,2025-01-01,1000,10
+current,2025-01-02,1000,10
+current,2025-01-03,1000,10

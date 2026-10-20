@@ -1,0 +1,7 @@
+incident_casebook:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: casebook.duckdb
+      threads: 1

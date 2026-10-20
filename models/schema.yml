@@ -1,0 +1,20 @@
+version: 2
+models:
+  - name: case1_fixed
+    columns:
+      - name: event_id
+        data_tests: [unique, not_null]
+  - name: case2_fixed
+    columns:
+      - name: user_id
+        data_tests: [not_null]
+seeds:
+  - name: users
+    config:
+      column_types: {user_id: varchar}
+  - name: activity
+    config:
+      column_types: {raw_user_id: varchar}
+  - name: identity_map
+    config:
+      column_types: {raw_user_id: varchar, canonical_user_id: varchar}
