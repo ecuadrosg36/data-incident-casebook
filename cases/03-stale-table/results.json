@@ -1,0 +1,25 @@
+{
+  "synthetic": true,
+  "case": "03-stale-table",
+  "regression_violations_before": 1,
+  "regression_violations_after": 0,
+  "investigation": [
+    {
+      "table_name": "current",
+      "first_write": "2025-01-01",
+      "last_write": "2025-01-03",
+      "rows_written": 3000,
+      "error_rate": 0.01
+    },
+    {
+      "table_name": "legacy",
+      "first_write": "2024-01-01",
+      "last_write": "2024-01-01",
+      "rows_written": 1000,
+      "error_rate": 0.8
+    }
+  ],
+  "evaluation_date": "2025-01-03",
+  "apparent_error_rate": 0.2075,
+  "active_error_rate": 0.01
+}

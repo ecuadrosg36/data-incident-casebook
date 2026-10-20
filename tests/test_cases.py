@@ -42,3 +42,23 @@ def test_committed_evidence_matches_database(case, con):
     for suffix, key in [('bug','regression_violations_before'),('fixed','regression_violations_after')]:
         assert len(con.execute(query.format(table=f'case{n}_{suffix}')).fetchall()) == result[key]
     assert result['synthetic'] is True
+
+
+def test_timestamp_priority_contract(con):
+    # A later arrival of an older source version must not win; ingestion time
+    # only decides between equally recent source versions.
+    assert con.sql('''select amount from (values
+      (date '2025-01-03', date '2025-01-04', 1, 10),
+      (date '2025-01-02', date '2025-01-09', 9, 20),
+      (date '2025-01-03', date '2025-01-05', 0, 30)
+    ) t(source_updated_at,ingested_at,delivery_sequence,amount)
+    order by source_updated_at desc, ingested_at desc, delivery_sequence desc limit 1
+    ''').fetchone()[0] == 30
+
+
+@pytest.mark.parametrize('case', sorted((ROOT / 'cases').iterdir()))
+def test_review_copies_match_executable_models(case):
+    n=int(case.name[:2])
+    for local, model in [('bug','bug'),('fix','fixed')]:
+        assert (case/f'{local}.sql').read_text() == (ROOT/f'models/case{n}_{model}.sql').read_text()
+    assert 400 <= len((case/'WRITEUP.md').read_text().split()) <= 700

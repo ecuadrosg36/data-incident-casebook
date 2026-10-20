@@ -1,0 +1,111 @@
+{
+  "synthetic": true,
+  "case": "01-duplicate-events",
+  "regression_violations_before": 20,
+  "regression_violations_after": 0,
+  "investigation": [
+    {
+      "event_id": 1,
+      "deliveries": 3,
+      "latest_source_update": "2025-01-03"
+    },
+    {
+      "event_id": 2,
+      "deliveries": 2,
+      "latest_source_update": "2025-01-03"
+    },
+    {
+      "event_id": 3,
+      "deliveries": 2,
+      "latest_source_update": "2025-01-03"
+    },
+    {
+      "event_id": 4,
+      "deliveries": 2,
+      "latest_source_update": "2025-01-03"
+    },
+    {
+      "event_id": 5,
+      "deliveries": 2,
+      "latest_source_update": "2025-01-03"
+    },
+    {
+      "event_id": 6,
+      "deliveries": 2,
+      "latest_source_update": "2025-01-03"
+    },
+    {
+      "event_id": 7,
+      "deliveries": 2,
+      "latest_source_update": "2025-01-03"
+    },
+    {
+      "event_id": 8,
+      "deliveries": 2,
+      "latest_source_update": "2025-01-03"
+    },
+    {
+      "event_id": 9,
+      "deliveries": 2,
+      "latest_source_update": "2025-01-03"
+    },
+    {
+      "event_id": 10,
+      "deliveries": 2,
+      "latest_source_update": "2025-01-03"
+    },
+    {
+      "event_id": 11,
+      "deliveries": 2,
+      "latest_source_update": "2025-01-03"
+    },
+    {
+      "event_id": 12,
+      "deliveries": 2,
+      "latest_source_update": "2025-01-03"
+    },
+    {
+      "event_id": 13,
+      "deliveries": 2,
+      "latest_source_update": "2025-01-03"
+    },
+    {
+      "event_id": 14,
+      "deliveries": 2,
+      "latest_source_update": "2025-01-03"
+    },
+    {
+      "event_id": 15,
+      "deliveries": 2,
+      "latest_source_update": "2025-01-03"
+    },
+    {
+      "event_id": 16,
+      "deliveries": 2,
+      "latest_source_update": "2025-01-03"
+    },
+    {
+      "event_id": 17,
+      "deliveries": 2,
+      "latest_source_update": "2025-01-03"
+    },
+    {
+      "event_id": 18,
+      "deliveries": 2,
+      "latest_source_update": "2025-01-03"
+    },
+    {
+      "event_id": 19,
+      "deliveries": 2,
+      "latest_source_update": "2025-01-03"
+    },
+    {
+      "event_id": 20,
+      "deliveries": 2,
+      "latest_source_update": "2025-01-03"
+    }
+  ],
+  "input_deliveries": 121,
+  "fixed_events": 100,
+  "tie_winner_amount": 999
+}

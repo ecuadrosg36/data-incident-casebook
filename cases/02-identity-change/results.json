@@ -1,0 +1,172 @@
+{
+  "synthetic": true,
+  "case": "02-identity-change",
+  "regression_violations_before": 40,
+  "regression_violations_after": 0,
+  "investigation": [
+    {
+      "tenant": "a",
+      "raw_user_id": "usr:31"
+    },
+    {
+      "tenant": "a",
+      "raw_user_id": "usr:32"
+    },
+    {
+      "tenant": "a",
+      "raw_user_id": "usr:33"
+    },
+    {
+      "tenant": "a",
+      "raw_user_id": "usr:34"
+    },
+    {
+      "tenant": "a",
+      "raw_user_id": "usr:35"
+    },
+    {
+      "tenant": "a",
+      "raw_user_id": "usr:36"
+    },
+    {
+      "tenant": "a",
+      "raw_user_id": "usr:37"
+    },
+    {
+      "tenant": "a",
+      "raw_user_id": "usr:38"
+    },
+    {
+      "tenant": "a",
+      "raw_user_id": "usr:39"
+    },
+    {
+      "tenant": "a",
+      "raw_user_id": "usr:40"
+    },
+    {
+      "tenant": "a",
+      "raw_user_id": "usr:41"
+    },
+    {
+      "tenant": "a",
+      "raw_user_id": "usr:42"
+    },
+    {
+      "tenant": "a",
+      "raw_user_id": "usr:43"
+    },
+    {
+      "tenant": "a",
+      "raw_user_id": "usr:44"
+    },
+    {
+      "tenant": "a",
+      "raw_user_id": "usr:45"
+    },
+    {
+      "tenant": "a",
+      "raw_user_id": "usr:46"
+    },
+    {
+      "tenant": "a",
+      "raw_user_id": "usr:47"
+    },
+    {
+      "tenant": "a",
+      "raw_user_id": "usr:48"
+    },
+    {
+      "tenant": "a",
+      "raw_user_id": "usr:49"
+    },
+    {
+      "tenant": "a",
+      "raw_user_id": "usr:50"
+    },
+    {
+      "tenant": "b",
+      "raw_user_id": "usr:31"
+    },
+    {
+      "tenant": "b",
+      "raw_user_id": "usr:32"
+    },
+    {
+      "tenant": "b",
+      "raw_user_id": "usr:33"
+    },
+    {
+      "tenant": "b",
+      "raw_user_id": "usr:34"
+    },
+    {
+      "tenant": "b",
+      "raw_user_id": "usr:35"
+    },
+    {
+      "tenant": "b",
+      "raw_user_id": "usr:36"
+    },
+    {
+      "tenant": "b",
+      "raw_user_id": "usr:37"
+    },
+    {
+      "tenant": "b",
+      "raw_user_id": "usr:38"
+    },
+    {
+      "tenant": "b",
+      "raw_user_id": "usr:39"
+    },
+    {
+      "tenant": "b",
+      "raw_user_id": "usr:40"
+    },
+    {
+      "tenant": "b",
+      "raw_user_id": "usr:41"
+    },
+    {
+      "tenant": "b",
+      "raw_user_id": "usr:42"
+    },
+    {
+      "tenant": "b",
+      "raw_user_id": "usr:43"
+    },
+    {
+      "tenant": "b",
+      "raw_user_id": "usr:44"
+    },
+    {
+      "tenant": "b",
+      "raw_user_id": "usr:45"
+    },
+    {
+      "tenant": "b",
+      "raw_user_id": "usr:46"
+    },
+    {
+      "tenant": "b",
+      "raw_user_id": "usr:47"
+    },
+    {
+      "tenant": "b",
+      "raw_user_id": "usr:48"
+    },
+    {
+      "tenant": "b",
+      "raw_user_id": "usr:49"
+    },
+    {
+      "tenant": "b",
+      "raw_user_id": "usr:50"
+    }
+  ],
+  "total_activity": 100,
+  "before_matches": 60,
+  "after_matches": 100,
+  "recovered_share": 0.4
+}
